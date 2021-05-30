@@ -3,6 +3,7 @@
 }
 
 $spacing: 0.03em;
+$color: #191918;
 
 %hover-all {
     transition: all .3s;
@@ -241,6 +242,94 @@ body {
     }
 }
 
+/*section__two*/
+.section__two {
+    min-height: 652px;
+    padding-bottom: 160px;
+    .section__title {
+        color: #191918;
+        font-size: 40px;
+        letter-spacing: $spacing;
+        text-transform: uppercase;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 80px;
+    }
+
+    .wrap__paragraph {
+        text-align: center;
+        padding-top: 60px;
+
+        .paragraph {
+            font-size: 20px;
+            line-height: 30px;
+            color: rgba(25, 25, 24, 0.74);
+            font-weight: 400;
+            span {
+                font-weight: 700;
+            }
+        }
+        
+        .paragraph:nth-child(2) {
+            margin-top: 0;
+        }
+    }
+    
+
+    
+
+    .about__us {
+        margin-top: 65px;
+        display: flex;
+        height: 444px;
+        column-gap: 30px;
+        
+        .img__box {
+            background: url('../images/section_two/love.jpg') center center/cover no-repeat;
+            height: 444px;
+            width: 438px;
+            border-radius: 15px;
+            flex-shrink: 0;
+            overflow: hidden;
+        }
+
+        .about__text {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .text__subtitle {
+                padding-top: 20px;
+                font-size: 30px;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+
+            p {
+                margin: 0;
+                text-align: left;
+            }
+
+            .paragraph {
+                font-size: 18px;
+                padding-right: 40px;
+                line-height: 24px;
+                color: rgba(25, 25, 24, 0.79);
+
+                span {
+                    font-weight: 700;
+                }
+            }
+
+            .btn {
+                @extend %btn-market;
+            }
+        }
+    }
+
+    
+}
+
 
 
 /*width 992*/
@@ -318,44 +407,62 @@ body {
             
         }
     }
-}
 
-/*section__two*/
-.section__two {
-    height: 1000px;
-    
-    .section__title {
-        color: #191918;
-        font-size: 40px;
-        letter-spacing: $spacing;
-        text-transform: uppercase;
-        font-weight: 700;
-        text-align: center;
-        margin-top: 80px;
-    }
+    .section__two {
+        min-height: 652px;
+        padding-bottom: 120px;
 
-    .paragraph {
-        font-size: 20px;
-        line-height: 30px;
-        color: rgba(25, 25, 24, 0.74);
-        font-weight: 400;
-        text-align: center;
-        margin-top: 60px;
-        span {
-            font-weight: 700;
+        .section__title {
+            font-size: 35px;
+            margin-top: 52px;
+        }
+
+        .wrap__paragraph {
+            padding-top: 50px;
+            .paragraph {
+                
+                font-size: 18px;
+            }
+
+        }
+
+        .about__us {
+            margin-top: 60px;
+            height: 469px;
+            height: 475px;
+
+            .img__box {
+                align-self: center;
+                height: 352px;
+                width: 370px;
+                background-size: 365px auto;
+                background-position: center center;
+            }
+
+            .about__text {
+                row-gap: 25px;
+
+                .text__subtitle{
+                    padding: 0;
+                }
+
+                .paragraph {
+                    padding-right: 0;
+                    font-size: 16px;
+                }
+            }
         }
     }
     
-    .paragraph:last-child {
-        margin-top: 0;
-    }
 
-    
 }
+
+
 
 @media screen and (max-width: 768px) {
     .container {
         max-width: 698px;
+        
     }
 
     .head {
@@ -491,6 +598,63 @@ body {
         }
     }
 
+    .section__two {
+        min-height: 1043px;
+        padding-bottom: 120px;
+        
+        .section__title {
+            margin-top: 48px;
+            font-size: 30px;
+        }
+
+
+        .wrap__paragraph {
+            padding-top: 45px;
+
+            .paragraph {
+                display: inline;
+
+            }
+        }
+
+        .about__us {
+            flex-direction: column;
+            margin-top: 50px;
+
+            .img__box {
+                width: 100%;
+                background-size: cover;
+                background-position: center 47%;
+            }
+
+            .about__text {
+                margin-top: 50px;
+                row-gap: 0;
+
+                .text__subtitle {
+                    font-size: 20px;
+                }
+
+                .paragraph {
+                    margin-top: 45px;
+                }
+
+                .paragraph:nth-child(3) {
+                    margin-top: 40px;
+                }
+
+                .btn {
+                    margin-top: 50px;
+                    padding: 19px 35px;
+                }
+            }
+        }
+        
+
+        
+
+    }
+
     
 }
 
@@ -554,6 +718,7 @@ body {
         padding-bottom: 67px;
 
         .title__box {
+    
 
             .title {
                 margin-top: 53px;
@@ -564,9 +729,42 @@ body {
             }
         }
     }
+
+    .section__two {
+        min-height: 1225px;
+        padding-bottom: 100px;
+
+        .section__title {
+            margin-top: 78px;
+        }
+
+        .wrap__paragraph {
+            
+            .paragraph {
+                line-height: 27px;
+                
+            }
+        }
+
+        .about__us {
+
+            .about__text {
+                margin-top: 45px;
+
+                .paragraph {
+                    margin-top: 40px;
+                }
+
+                .paragraph:nth-child(3) {
+                    margin-top: 30px;
+                }
+
+                .btn {
+                    margin-top: 38px;
+                }
+            }
+        }
+    }
+
 }
 
-section {
-    height: 100vh;
-    background: red;
-}
