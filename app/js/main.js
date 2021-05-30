@@ -7,10 +7,10 @@ $(document).ready(function() {
 var scrolled;
 window.onscroll = function() {
     scrolled = window.pageYOffset || document.documentElement.scrollTop;
-    if(scrolled > 400){
+    if(scrolled > 700){
         $(".header__menu").css({"background": "white"})
     }
-    if(400 > scrolled){
+    if(700 > scrolled){
         $(".header__menu").css({"background": "transparent"})         
     }
 

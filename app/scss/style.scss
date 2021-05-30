@@ -2,6 +2,8 @@
     box-sizing: border-box;
 }
 
+$spacing: 0.03em;
+
 %hover-all {
     transition: all .3s;
 }
@@ -316,6 +318,39 @@ body {
             
         }
     }
+}
+
+/*section__two*/
+.section__two {
+    height: 1000px;
+    
+    .section__title {
+        color: #191918;
+        font-size: 40px;
+        letter-spacing: $spacing;
+        text-transform: uppercase;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 80px;
+    }
+
+    .paragraph {
+        font-size: 20px;
+        line-height: 30px;
+        color: rgba(25, 25, 24, 0.74);
+        font-weight: 400;
+        text-align: center;
+        margin-top: 60px;
+        span {
+            font-weight: 700;
+        }
+    }
+    
+    .paragraph:last-child {
+        margin-top: 0;
+    }
+
+    
 }
 
 @media screen and (max-width: 768px) {
