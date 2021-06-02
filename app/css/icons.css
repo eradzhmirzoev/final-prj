@@ -1,17 +1,16 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icons/icomoon.eot?p5nf8c');
-  src:  url('../fonts/icons/icomoon.eot?p5nf8c#iefix') format('embedded-opentype'),
-    url('../fonts/icons/icomoon.ttf?p5nf8c') format('truetype'),
-    url('../fonts/icons/icomoon.woff?p5nf8c') format('woff'),
-    url('../fonts/icons/icomoon.svg?p5nf8c#icomoon') format('svg');
+  src:  url('../fonts/icons/icomoon.eot?u5gg8f');
+  src:  url('../fonts/icons/icomoon.eot?u5gg8f#iefix') format('embedded-opentype'),
+    url('../fonts/icons/icomoon.ttf?u5gg8f') format('truetype'),
+    url('../fonts/icons/icomoon.woff?u5gg8f') format('woff'),
+    url('../fonts/icons/icomoon.svg?u5gg8f#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^="icon-"]:before, 
-[class*=" icon-"]:before {
+[class^="icon-"]:before, [class*=" icon-"]:before {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   speak: never;
@@ -26,15 +25,24 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-instagram-footer:before {
+.icon-clock:before {
   content: "\e900";
 }
-.icon-mail:before {
+.icon-love:before {
   content: "\e901";
 }
-.icon-cart:before {
+.icon-wolf:before {
   content: "\e902";
 }
-.icon-facebook:before {
+.icon-bird:before {
   content: "\e903";
+}
+.icon-elephant:before {
+  content: "\e904";
+}
+.icon-frame:before {
+  content: "\e905";
+}
+.icon-unicorn:before {
+  content: "\e906";
 }

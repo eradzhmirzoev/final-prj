@@ -331,6 +331,160 @@ body {
 }
 
 
+/*section__messege*/
+
+form {
+    padding: 50px 0;
+
+    .messege__title {
+        letter-spacing: 0.03em;
+        color: #191918;
+        font-size: 18px;
+        text-align: center;
+        padding: 0 150px;
+        line-height: 30px;
+        font-weight: 400;
+
+        span {
+            font-weight: 700;
+        }
+    }
+
+    .send__messege {
+        max-width: 910px;
+        margin: 50px auto 0 auto;
+        display: flex;
+        justify-content: space-between;
+        
+        input {
+            width: 556px;
+            height: 50px;
+            border: 1px solid #336699;
+            border-radius: 30px;
+            padding-left: 35px;
+            letter-spacing: 0.05em;
+        }
+
+        .send__btn {
+            @extend %btn-market;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 16px 105px;
+        }
+    }
+}
+
+
+/*section__sale*/
+
+.section__sale {
+    margin-top: 100px;
+}
+
+.sale__wrap {
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.title__sale {
+    text-align: center;
+    color: #191918;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+
+.content__sale {
+    width: 436px;
+    height: 575px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    padding: 40px 24px 50px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @extend %hover-all;
+    
+
+    .sale__img {
+        min-height: 280px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
+    .sale {
+        width: 69px;
+        height: 30px;
+        background: #F97878;
+        border-radius: 5px;
+        position: absolute;
+        top: -20px;
+        left: 0;
+        text-align: center;
+        line-height: 30px;
+        color: #191918;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    .describe {
+
+        .title {
+            letter-spacing: 0.03em;
+            color: rgba(25, 25, 24, 0.8);
+            font-size: 18px;
+        }
+
+        .price {
+            margin-top: 40px;
+            font-weight: 600;
+            letter-spacing: 0.03em;
+
+            span:first-child {
+                font-size: 18px;
+                color: rgba(25, 25, 24, 0.72);
+                position: relative;
+                display: inline-block;
+            }
+
+            span:first-child:before {
+                border-bottom: 2px solid rgba(25, 25, 24, 0.72);
+                position: absolute;
+                content: "";
+                width: 100%;
+                height: 50%;
+                transform: rotate(8deg);
+                top: -3px;
+                left: 0;
+            }
+
+            span:last-child {
+                color: #191918;
+                font-size: 30px;
+                display: inline-block;
+                margin-left: 22px;
+            }
+        }
+
+        .to__product {
+            display: inline-block;
+            color: rgba(51, 102, 153, 0.8);
+            font-size: 16px;
+            margin-top: 48px;
+            letter-spacing: 0.03em;
+        }
+    }
+}
+
+.content__sale:hover {
+    box-shadow: 0 0 1px 3px rgba(0, 0, 0, .1);
+}
 
 /*width 992*/
 
@@ -454,6 +608,30 @@ body {
         }
     }
     
+    /*section__messege*/
+
+    form {
+        padding: 50px 0;
+
+        .messege__title {
+            padding: 0;
+        }
+        
+        .send__messege {
+            margin-top: 55px;
+            justify-content: space-evenly;
+            input {
+                width: 449px;
+            }
+
+            .send__btn {
+                padding: 14px 88px;
+                font-size: 18px;
+                
+            }
+        }
+        
+    }
 
 }
 
@@ -600,7 +778,7 @@ body {
 
     .section__two {
         min-height: 1043px;
-        padding-bottom: 120px;
+        padding-bottom: 450px;
         
         .section__title {
             margin-top: 48px;
@@ -655,6 +833,28 @@ body {
 
     }
 
+    form {
+        padding: 50px 0;
+
+        .messege__title {
+            line-height: 23px;
+            padding: 0 10px;
+        }
+        
+        .send__messege {
+            margin-top: 45px;
+            justify-content: space-between;
+
+            input {
+                width: 410px;
+            }
+
+            .send__btn {
+                padding: 14px 48px;
+            }
+        }
+        
+    }
     
 }
 
@@ -732,7 +932,7 @@ body {
 
     .section__two {
         min-height: 1225px;
-        padding-bottom: 100px;
+        padding-bottom: 0;
 
         .section__title {
             margin-top: 78px;
@@ -766,5 +966,26 @@ body {
         }
     }
 
-}
+    .section__messege {
 
+        form {
+            padding: 0 0 50px 0;
+
+            .messege__title {
+                padding: 0;
+            }
+        }
+
+        .send__messege {
+            
+            input {
+                width: 300px;
+            }
+            
+            .send__btn {
+                padding: 14px 18px;
+            }
+        }
+    }
+
+}
