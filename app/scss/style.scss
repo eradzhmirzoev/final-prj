@@ -246,7 +246,7 @@ body {
 /*section__two*/
 .section__two {
     min-height: 652px;
-    padding-bottom: 160px;
+    padding-bottom: 70px;
     .section__title {
         color: #191918;
         font-size: 40px;
@@ -330,6 +330,174 @@ body {
 
     
 }
+
+/*section__collection*/
+
+
+.title__collection {
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #191918;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.section__collection {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 960px;
+}
+
+.content__wrap {
+    width: 320px;
+    height: 453px;
+    position: relative;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    @extend %hover-all;
+
+    span {
+        display: none;
+        font-size: 30px;
+        color: #191918;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+        font-weight: 400;
+        margin-top: 14px;
+        transition: all .3s;
+        position: relative;
+        text-align: center;
+        line-height: 39px;
+        @extend %hover-all;
+    }
+
+    span:after {
+        content: "";
+        display: block;
+        width: 15px;
+        height: 15px;
+        background: #336699;
+        border-radius: 50%;
+        position: absolute;
+        bottom: -20px;
+        left: 46%;
+        
+    }
+
+    .img__svg {
+        margin-top: 50px;
+        margin-left: 27px;
+    }
+
+    .content__item {
+        width: 320px;
+        height: 453px;
+        background: url('../images/collections/elephant_bg.jpg') no-repeat;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        border-radius: 30px;
+        
+    }
+}
+
+.content__wrap:nth-child(2) {
+
+    span {
+        margin-top: 60px;
+    }
+    .content__item {
+        background: url('../images/collections/unicorn_bg.jpg') no-repeat;
+    }
+
+    .img__svg {
+        margin-top: 18px;
+        margin-left: 57px;
+    }
+
+}
+
+.content__wrap:nth-child(3) {
+
+    .content__item {
+        background: url('../images/collections/clock.svg') center 20% no-repeat,url('../images/collections/clock_bg.jpg') no-repeat;
+    }
+
+}
+
+.content__wrap:nth-child(4) {
+
+    .content__item {
+        background: url('../images/collections/wolf_bg.jpg') no-repeat;
+    }
+
+    .img__svg {
+        margin-top: 69px;
+        margin-left: 80px;
+    }
+
+}
+
+.content__wrap:nth-child(5) {
+
+    .content__item {
+        background: url('../images/collections/love.svg') 45% 15% no-repeat ,url('../images/collections/love_bg.jpg') no-repeat;
+    }
+}
+
+.content__wrap:nth-child(6) {
+
+    .content__item {
+        background: url('../images/collections/bird_bg.jpg') no-repeat;
+    }
+
+    .img__svg {
+        margin-top: 55px;
+        margin-left: 45px;
+    }
+
+}
+
+.content__wrap:nth-child(7) {
+
+    .content__item {
+        background: url('../images/collections/deer.svg') 50% 20% no-repeat ,url('../images/collections/deer_bg.jpg') no-repeat;
+    }
+}
+
+.content__wrap:nth-child(8) {
+
+    .content__item {
+        background: url('../images/collections/without_animal.jpg') no-repeat;
+    }
+
+}
+
+.content__wrap:hover {
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5);
+}
+
+.content__wrap:hover span {
+    display: block;
+}
+
+.content__wrap:hover .content__item {
+    filter: blur(3px);
+    
+}
+
+.content__wrap:hover .svg__content {
+    filter: drop-shadow(0 0 5px rgb(0, 0, 0));
+
+}
+
 
 
 /*section__messege*/
@@ -829,8 +997,6 @@ form {
     
 }
 
-
-
 .footer {
     margin-top: 100px;
 }
@@ -921,10 +1087,95 @@ form {
             }
         }
 
-        
+    }
+
+    /*section__collection*/
+    .section__collection {
+        height: 870px;
+    }
+
+    .title__collection {
+        font-size: 35px;
+    }
+
+    .content__wrap {
+        width: 290px;
+        height: 407px;
 
         
+
+        .content__item {
+            width: 290px;
+            height: 407px;
+        }
+
+        .svg__content {
+            width: 180px;
+            height: 128px;
+        }
     }
+
+    .content__wrap:nth-child(2) {
+
+        span {
+            margin-top: 60px;
+        }
+
+        .svg__content {
+            width: 169px;
+            height: 175px;
+        }
+    
+    }
+
+    .content__wrap:nth-child(3) {
+
+        .content__item {
+            background: url('../images/collections/clock.svg') center 30%/195px 207px no-repeat,url('../images/collections/clock_bg.jpg') right center no-repeat;
+        }
+    
+    }
+
+    .content__wrap:nth-child(4) {
+        display: none;
+    }
+
+    .content__wrap:nth-child(5) {
+
+        .content__item {
+            background: url('../images/collections/love.svg') 35% 35%/208px 312px no-repeat ,url('../images/collections/love_bg.jpg') right center no-repeat;
+        }
+    }
+
+    .content__wrap:nth-child(6) {
+
+        .content__item {
+            background: url('../images/collections/bird_bg.jpg') right center no-repeat;
+        }
+    
+        .img__svg {
+            margin-top: 50px;
+            margin-left: 60px;
+        }
+
+        .svg__content {
+            width: 184px;
+            height: 195px;
+        }
+    
+    }
+
+    .content__wrap:nth-child(7) {
+
+        .content__item {
+            background: url('../images/collections/deer.svg') 50% 20%/ 118px 168px no-repeat ,url('../images/collections/deer_bg.jpg') right center no-repeat;
+        }
+    }
+    
+    .content__wrap:nth-child(8) {
+        display: none;
+    }
+    
 }
 
 /*width 992*/
@@ -1005,7 +1256,7 @@ form {
 
     .section__two {
         min-height: 652px;
-        padding-bottom: 120px;
+        padding-bottom: 80px;
 
         .section__title {
             font-size: 35px;
