@@ -504,7 +504,6 @@ body {
 
 form {
     padding: 50px 0;
-
     .messege__title {
         letter-spacing: 0.03em;
         color: #191918;
@@ -548,7 +547,7 @@ form {
 /*section__sale*/
 
 .section__sale {
-    margin-top: 100px;
+    margin-top: 50px;
     padding-bottom: 10px;
 }
 
@@ -1149,7 +1148,7 @@ form {
     }
 
     .content__wrap:nth-child(6) {
-
+        margin-left: 30px;
         .content__item {
             background: url('../images/collections/bird_bg.jpg') right center no-repeat;
         }
@@ -1363,11 +1362,47 @@ form {
 
     /*footer*/
 
-
+    .content__wrap:nth-child(6),
     .content__wrap:nth-child(7) {
         margin: 0;
     }
 }
+
+
+@media screen and (max-width: 889px) {
+
+    .title__collection {
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+
+    .section__collection {
+        height: 790px;
+        align-content: space-between;
+        justify-content: space-evenly;
+    }
+    
+    .content__wrap {
+        width: 270px;
+        height: 379px;
+        overflow: hidden;
+    }
+
+    .content__item {
+        width: 270px;
+        height: 379px;
+    }
+
+   
+    .content__wrap:nth-child(3) {
+        display: none;
+    }
+
+    .content__wrap:nth-child(7) {
+        display: none;
+    }
+}
+
 
 
 
@@ -1759,7 +1794,12 @@ form {
         }
     }
 
+    /*section__messege*/
     .section__messege {
+        margin-top: 70px;
+        display: flex;
+        align-items: center;
+        
 
         form {
             padding: 0 0 50px 0;
@@ -1779,6 +1819,32 @@ form {
                 padding: 14px 18px;
             }
         }
+    }
+
+    /*section__sale*/
+
+    .section__sale {
+        margin-top: 200px;
+    }
+
+    /*section collection*/
+    .section__collection__wrap {
+        height: 889px;
+    }
+
+    .section__collection {
+        height: 685px;
+        justify-content: space-between;
+    }
+
+    .content__wrap {
+        width: 240px;
+        height: 336px;
+    }
+
+    .content__item {
+        width: 240px;
+        height: 336px;
     }
 
     /*slider*/
